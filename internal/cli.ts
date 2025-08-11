@@ -2,9 +2,10 @@ import { existsSync } from 'fs';
 import { Command } from 'commander';
 import path from 'path';
 import { readdir } from 'fs/promises';
-import { execSync } from 'child_process';
+import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
 import prompts from 'prompts';
+import { listenForKeyPresses } from './handle-keypress.ts';
 
 const program = new Command();
 
@@ -129,18 +130,71 @@ program
       'tsx',
     );
 
+    let dispose: (() => void) | null = null;
+
     try {
-      execSync(
-        `${tsxExecutablePath} --env-file=${envFilePath} ${mainFilePath}`,
+      // Use spawn instead of execSync for non-blocking execution with input forwarding
+      const childProcess = spawn(
+        tsxExecutablePath,
+        ['--env-file=' + envFilePath, mainFilePath],
         {
-          stdio: 'inherit',
+          stdio: ['pipe', 'inherit', 'inherit'],
           cwd: selectedDirectoryFullPath,
         },
       );
+
+      // Set up key press listener with child process forwarding
+      dispose = listenForKeyPresses({
+        onKeyPress: (key) => {},
+        onForwardChunkToChild: (chunk) => {
+          childProcess.stdin.write(chunk);
+        },
+        onKill: () => {
+          childProcess.kill();
+          process.exit(0);
+        },
+      });
+
+      // Handle child process events
+      childProcess.on('error', (error) => {
+        console.error('Failed to start child process:', error);
+        dispose?.();
+        process.exit(1);
+      });
+
+      childProcess.on('exit', (code, signal) => {
+        if (code !== null) {
+          console.log(`Child process exited with code ${code}`);
+        } else if (signal !== null) {
+          console.log(
+            `Child process was killed with signal ${signal}`,
+          );
+        }
+        dispose?.();
+        process.exit(code || 0);
+      });
+
+      // Wait for child process to complete
+      await new Promise<void>((resolve, reject) => {
+        childProcess.on('close', (code) => {
+          if (code === 0) {
+            resolve();
+          } else {
+            reject(
+              new Error(
+                `Child process exited with code ${code}`,
+              ),
+            );
+          }
+        });
+      });
     } catch (e) {
       console.error(e);
+      dispose?.();
       process.exit(1);
     }
+
+    dispose?.();
   });
 
 program.parse(process.argv);
