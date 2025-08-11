@@ -10,7 +10,7 @@ So I figure I'd show you the combination of the two systems as an explainer.
 
 ## The Query Rewriter
 
-Inside our [`POST`](./api/chat.ts) route now, we begin with a query rewriter:
+Inside our [`POST` route](./api/chat.ts) now, we begin with a query rewriter:
 
 ```ts
 const queryRewriterResult = await generateObject({
@@ -38,7 +38,7 @@ const queryRewriterResult = await generateObject({
 });
 ```
 
-This generates a list of keywords and a search query. The keywords and search query get passed into a `searchMemories` function, which loads all memories and uses both embeddings and BM25 search:
+This generates a list of keywords and a search query. The keywords and search query get passed into a [`searchMemories` function](./search.ts), which loads all memories and uses both embeddings and BM25 search:
 
 ```ts
 const allMemories = await searchMemories({
@@ -47,7 +47,7 @@ const allMemories = await searchMemories({
 });
 ```
 
-We then merge the results together with Reciprocal Rank Fusion, slice off the top 10 memories, and format them:
+We then merge the results together with Reciprocal Rank Fusion, slice off the top 10 memories, and format them using our [`formatMemory` utility](./utils.ts):
 
 ```ts
 const formattedMemories = allMemories
@@ -75,7 +75,7 @@ const result = streamText({
 });
 ```
 
-When we're saving memories, we're also creating an embedding, using the `embedMemory` function:
+When we're saving memories, we're also creating an embedding, using the [`embedMemory` function](./embeddings.ts):
 
 ```ts
 saveMemories(
@@ -89,6 +89,8 @@ saveMemories(
   ),
 );
 ```
+
+The [`saveMemories` function](./memory-persistence.ts) handles storing these memories with their embeddings.
 
 Since memories are pretty small, you could probably fetch up to 30, 40, 50 without impacting context too much.
 

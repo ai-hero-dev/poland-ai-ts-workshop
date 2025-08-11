@@ -54,6 +54,6 @@ for (const word of splitText) {
 }
 ```
 
-This approach is really handy when you want to mimic a part of the AI SDK or just manually stream in some text.
+This approach is really handy when you want to mimic a part of the AI SDK or just manually stream in some text. You can see the full example in our [`main.ts`](./main.ts) file.
 
 Nice work, and I'll see you in the next one.

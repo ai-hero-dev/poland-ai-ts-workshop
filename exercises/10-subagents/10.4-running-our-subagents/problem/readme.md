@@ -14,7 +14,7 @@ We'll use a diary data structure to track the work performed, which will be cruc
 First, we need to create a diary data structure. The simplest approach is to use a string that we append to - that's what I've done in the solution.
 
 ```ts
-// Inside the POST function in api/chat.ts
+// Inside the POST function in our api/chat.ts
 export const POST = async (req: Request): Promise<Response> => {
   const body: { messages: MyMessage[] } = await req.json();
   const { messages } = body;
@@ -64,7 +64,7 @@ After the orchestrator determines which tasks to run, we need to execute them in
 Here's the code structure:
 
 ```ts
-// Inside the while loop in api/chat.ts
+// Inside the while loop in our api/chat.ts
 await Promise.all(
   tasksWithIds.map(async (task) => {
     const subagent = subagents[task.subagent];
@@ -107,7 +107,7 @@ If a task fails, we need to update the UI and the diary with the error.
 For the orchestrator to make informed decisions, we need to pass the diary into the prompt:
 
 ```ts
-// Inside the while loop in api/chat.ts
+// Inside the while loop in our api/chat.ts
 const tasksResult = streamObject({
   // TODO: Pass the diary into the prompt so that the
   // orchestrator can track the work performed so far
@@ -127,7 +127,7 @@ This allows the orchestrator to see what has been done already and avoid repeati
 Finally, we need to update the message history to include the task parts. This ensures that if we ask a follow-up question, the agent will know what's been done already:
 
 ````ts
-// Inside formatMessageHistory in api/chat.ts
+// Inside formatMessageHistory in our api/chat.ts
 const formatMessageHistory = (messages: MyMessage[]) => {
   return messages
     .map((message) => {

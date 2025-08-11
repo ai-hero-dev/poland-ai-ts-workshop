@@ -8,7 +8,7 @@ Well, that's what we're going to look at in this exercise. I'm going to show you
 
 ## Our Memory Setup
 
-The main file to look at is this [`memory.ts`](./api/memory.ts) file where we are creating a new memory from [`mem0ai/oss`](https://github.com/mem0ai/mem0). This is an open source version of Mem0.
+The main file to look at is our [`memory.ts`](./api/memory.ts) file where we are creating a new memory from [`mem0ai/oss`](https://github.com/mem0ai/mem0). This is an open source version of Mem0.
 
 ```ts
 import { Memory } from 'mem0ai/oss';

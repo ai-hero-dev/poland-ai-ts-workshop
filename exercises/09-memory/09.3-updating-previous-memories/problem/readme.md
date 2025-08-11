@@ -8,7 +8,7 @@ This capability also gives us access to more interesting patterns where the AI c
 
 ## The Schemas & System Prompt
 
-We'll implement this inside the [`/api/chat.ts`](./api/chat.ts) file. Our first set of to-dos are in the `generateObject` call inside the `onFinish` function of `createUIMessageStream`. Here's what it currently looks like:
+We'll implement this inside our [`/api/chat.ts`](./api/chat.ts) file. Our first set of to-dos are in the `generateObject` call inside the `onFinish` function of `createUIMessageStream`. Here's what it currently looks like:
 
 ```ts
 const memoriesResult = await generateObject({

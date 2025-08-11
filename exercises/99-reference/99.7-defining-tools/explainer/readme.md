@@ -104,6 +104,6 @@ So hopefully that gives you a decent idea for how to declare these tools. Nice w
 
 ## Steps To Complete
 
-- [ ] Try running the exercise code and see what happens.
+- [ ] Try running our [`main.ts`](./main.ts) exercise code and see what happens.
 
 - [ ] Try changing the prompt to something else, or experimenting with different tools. Why not try a `writeFile` tool?

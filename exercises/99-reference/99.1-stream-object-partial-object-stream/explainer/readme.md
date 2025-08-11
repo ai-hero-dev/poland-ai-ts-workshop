@@ -31,7 +31,7 @@ for await (const part of result.partialObjectStream) {
 
 This is the important part here. Each `part` is a partial version of the object that will eventually be created. Unlike text streams where text is streamed delta by delta, here we get the entire object as it's growing and growing.
 
-If we run this with `npm exercise 101`, we'll see output like this at different stages:
+If we run this code in our [`main.ts`](./main.ts) file with `npm exercise 101`, we'll see output like this at different stages:
 
 ```js
 // First iteration

@@ -59,7 +59,7 @@ What I suggest you do is try exploring with the types inside the `UIMessage`. Tr
 
 ## Steps To Complete
 
-- [ ] Open the `explainer/main.ts` file to explore the code
+- [ ] Open our [`main.ts`](./main.ts) file to explore the code
 
 - [ ] Try modifying the `UIMessage` parts array to include different types of content
 

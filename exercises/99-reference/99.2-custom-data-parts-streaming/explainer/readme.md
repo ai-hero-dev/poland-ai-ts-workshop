@@ -55,7 +55,7 @@ for await (const chunk of stream) {
 }
 ```
 
-If we run the exercise, we'll see this output:
+If we run our [`main.ts`](./main.ts) exercise, we'll see this output:
 
 ```
 { type: 'data-hello', data: 'Bonjour!' }

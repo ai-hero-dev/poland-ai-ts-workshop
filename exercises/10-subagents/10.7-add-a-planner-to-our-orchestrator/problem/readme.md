@@ -37,7 +37,7 @@ The reasoning parts work exactly the same as `text-start`, `text-delta`, and `te
 
 ## Displaying the Plan
 
-Now, we need to modify our `Message` component in [`client/components.tsx`](./client/components.tsx) to handle reasoning parts. Looking at the TODO comment in the component:
+Now, we need to modify our [`Message` component](./client/components.tsx) to handle reasoning parts. Looking at the TODO comment in the component:
 
 ```tsx
 {
@@ -78,13 +78,13 @@ Good luck, and I'll see you in the solution!
 
 ## Steps To Complete
 
-- [ ] Implement the plan generation in [`api/chat.ts`](./api/chat.ts)
+- [ ] Implement the plan generation in our [`api/chat.ts`](./api/chat.ts)
 
 - [ ] Stream the plan to the client using reasoning parts
 
 - [ ] Update the diary with the final plan
 
-- [ ] Modify the `Message` component in `client/components.tsx` to handle reasoning parts
+- [ ] Modify the [`Message` component](./client/components.tsx) to handle reasoning parts
 
 - [ ] Test your changes by running the exercise
   - [ ] Make a request and observe if you can see the plan being streamed as reasoning

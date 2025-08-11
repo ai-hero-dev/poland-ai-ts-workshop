@@ -14,7 +14,7 @@ So we're going to summarize the output of each subagent before we write it to th
 
 ## The `summarizeAgentOutput` Function
 
-The way this will work is via a new function we're going to implement called `summarizeAgentOutput`. Here's what we need to complete in the [`api/summarize-agent-output.ts`](./api/summarize-agent-output.ts) file:
+The way this will work is via a new function we're going to implement called `summarizeAgentOutput`. Here's what we need to complete in our [`api/summarize-agent-output.ts`](./api/summarize-agent-output.ts) file:
 
 ```ts
 // problem/api/summarize-agent-output.ts
@@ -54,7 +54,7 @@ const getSummarizeSystemPrompt = () => {
 
 ## Updating the Subagent Execution Code
 
-In the [`api/chat.ts`](./api/chat.ts) file, we need to update the code that executes the subagents to use our new summarizing function:
+In our [`api/chat.ts`](./api/chat.ts) file, we need to update the code that executes the subagents to use our new summarizing function:
 
 ```ts
 // problem/api/chat.ts

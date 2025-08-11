@@ -13,7 +13,7 @@ To fix this issue, we need to add a summarization step at the end of our orchest
 
 Let's look at the code that needs to be implemented:
 
-In the `POST` function of our `chat.ts` file, we have a `while` loop that processes tasks. After this loop completes (when there are no more tasks to execute), we need to add code to summarize everything that happened:
+In the `POST` function of our [`chat.ts`](./api/chat.ts) file, we have a `while` loop that processes tasks. After this loop completes (when there are no more tasks to execute), we need to add code to summarize everything that happened:
 
 ```ts
 // TODO: Call streamText to summarize the results of the

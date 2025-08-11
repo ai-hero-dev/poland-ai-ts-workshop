@@ -12,7 +12,7 @@ export type MyMessage = UIMessage<
 >;
 ```
 
-This creates a `UIMessage` type that can handle our custom data parts. Our API route still creates a message stream similar to before:
+This creates a `UIMessage` type that can handle our custom data parts. Our [`API route`](./api/chat.ts) still creates a message stream similar to before:
 
 ```ts
 const stream = createUIMessageStream<MyMessage>({
@@ -26,7 +26,7 @@ const stream = createUIMessageStream<MyMessage>({
 });
 ```
 
-On the front end, we use the `useChat` hook with our custom message type:
+On the front end in our [`client components`](./client/components.tsx), we use the `useChat` hook with our custom message type:
 
 ```tsx
 const { messages, sendMessage } = useChat<MyMessage>({});

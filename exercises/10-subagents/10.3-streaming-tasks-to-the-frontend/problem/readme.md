@@ -61,7 +61,7 @@ Once we've defined this shape, we can use `writer.write` to send the task to the
 
 ## Rendering the tasks in the frontend
 
-The final step is to go into the `Message` component in the front end and render the `TaskItem`:
+The final step is to go into the [`Message` component](./client/components.tsx) in the front end and render the `TaskItem`:
 
 ```tsx
 {
@@ -89,12 +89,12 @@ Good luck, and I'll see you in the solution!
 
 ## Steps To Complete
 
-- [ ] Define the `data-task` type in the `MyMessage` type in `problem/api/chat.ts`
+- [ ] Define the `data-task` type in the `MyMessage` type in our [`api/chat.ts`](./api/chat.ts)
 
 - [ ] Replace `generateObject` with `streamObject` in the POST route
 
 - [ ] Implement the `writer.write` call to send the task to the frontend
 
-- [ ] Add task rendering to the `Message` component in `problem/client/components.tsx`
+- [ ] Add task rendering to the [`Message` component](./client/components.tsx)
 
 - [ ] Test the implementation by prompting the UI and observing the tasks in the frontend

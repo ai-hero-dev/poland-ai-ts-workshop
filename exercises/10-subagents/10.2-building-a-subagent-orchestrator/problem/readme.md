@@ -11,7 +11,7 @@ By the end of the exercise, you should be able to prompt the orchestrator from t
 
 ## The `generateObject` call
 
-Our first to-do is inside the `POST` route in [`api/chat.ts`](./api/chat.ts), and all we're going to do is call `generateObject` to generate a list of tasks. These tasks should be an array of objects with the following properties:
+Our first to-do is inside the `POST` route in our [`api/chat.ts`](./api/chat.ts), and all we're going to do is call `generateObject` to generate a list of tasks. These tasks should be an array of objects with the following properties:
 
 - The subagent to use
 - A detailed description of the task to perform

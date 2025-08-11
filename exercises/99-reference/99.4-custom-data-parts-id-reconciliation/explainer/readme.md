@@ -111,6 +111,6 @@ With just this small change of providing stable IDs, we can see how the message 
 - "Guten Tag!" replaces "Bonjour!"
 - "Auf Wiedersehen!" replaces "Au revoir!"
 
-So by providing this ID here, we have given each data part a stable identity, and when we write to an existing ID, we update the value of that data part rather than creating a new one.
+So by providing this ID here, we have given each data part a stable identity, and when we write to an existing ID, we update the value of that data part rather than creating a new one. You can see this in action by running our [`main.ts`](./main.ts) example.
 
 So it's a really nice way to model data parts that need to update over time. Very, very cool. Nice work, and I will see you in the next one.

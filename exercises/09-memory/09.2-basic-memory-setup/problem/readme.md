@@ -4,7 +4,7 @@ In this exercise, we're going to begin that journey.
 
 ## Loading The Memories
 
-All our work will be done inside the `POST` route [here](./api/chat.ts). I've given you a [`memory-persistence.ts`](./api/memory-persistence.ts) file that has a couple of key functions, including `loadMemories()` and `saveMemories()`.
+All our work will be done inside our [`POST` route](./api/chat.ts). I've given you a [`memory-persistence.ts`](./api/memory-persistence.ts) file that has a couple of key functions, including `loadMemories()` and `saveMemories()`.
 
 Your first job then is to load the memories out of the JSON file, format them into text, and then pass that text into the LLM that we're calling.
 
