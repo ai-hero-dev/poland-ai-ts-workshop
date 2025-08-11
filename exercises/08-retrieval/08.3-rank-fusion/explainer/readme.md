@@ -34,7 +34,7 @@ The algorithm that I've chosen to show you is the reciprocal rank fusion algorit
 
 It then adds those contributions up together, and you end up with a list of documents where the best ones are floated to the top.
 
-You can look at the code here in `utils.ts`:
+You can look at the code here in [`utils.ts`](./api/utils.ts):
 
 ```ts
 const RRF_K = 60;
@@ -113,7 +113,7 @@ Have a bit of a play, and I will see you in the next one.
 
 ## Steps To Complete
 
-- [ ] Explore the reciprocal rank fusion (RRF) algorithm in the codebase, particularly in the `utils.ts` file
+- [ ] Explore the reciprocal rank fusion (RRF) algorithm in the codebase, particularly in the [`utils.ts`](./api/utils.ts) file
 
 - [ ] Understand how RRF combines results from different ranking systems (BM25 and embeddings)
 

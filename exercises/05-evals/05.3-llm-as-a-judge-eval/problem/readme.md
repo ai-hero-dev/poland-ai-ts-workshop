@@ -15,7 +15,7 @@ Turns out that LLMs are really good at evaluating the output of other LLMs. Inst
 
 ## The Setup
 
-We're inside the question-answerer eval function. We've created a task here that takes in a PDF.
+We're inside the [`question-answerer.eval.ts`](./evals/question-answerer.eval.ts) function. We've created a task here that takes in a PDF.
 
 The PDF I've picked is the chain of thought prompting paper. It's the first paper that defined the idea of chain of thought prompting.
 
@@ -87,7 +87,7 @@ We have two evaluators at the bottom of our `evalite` configuration:
 
 ## The Attribution Scorer
 
-Inside the attribution evaluator, we're calling `createScorer`, which is the way you create scorers in separate files:
+Inside the [`attribution-eval.ts`](./evals/attribution-eval.ts) evaluator, we're calling `createScorer`, which is the way you create scorers in separate files:
 
 ```ts
 export const attributionToChainOfThoughtPaper = createScorer<
@@ -167,11 +167,11 @@ Good luck, and I'll see you in the solution.
 
 ## Steps To Complete
 
-- [ ] Pass the chain of thought paper, the question, and the answer to the `messages` object in the `attributionToChainOfThoughtPaper` scorer
+- [ ] Pass the chain of thought paper, the question, and the answer to the `messages` object in the [`attributionToChainOfThoughtPaper`](./evals/attribution-eval.ts) scorer
 
 - [ ] Define the schema for the LLM response using zod, which should include a feedback string and a score enum ('A', 'B', 'C', 'D')
 
-- [ ] Optional: Add more test cases to the `data` function in `question-answerer.eval.ts` to further test the system
+- [ ] Optional: Add more test cases to the `data` function in [`question-answerer.eval.ts`](./evals/question-answerer.eval.ts) to further test the system
 
 - [ ] Run the exercise to see if your implementation correctly evaluates the LLM's responses about the Chain of Thought paper
 

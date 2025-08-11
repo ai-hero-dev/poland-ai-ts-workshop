@@ -117,7 +117,7 @@ Good luck, and I'll see you in the solution!
 
 ## Steps To Complete
 
-- [ ] In `api/chat.ts`, locate where `convertToModelMessages` is being used
+- [ ] In [`api/chat.ts`](./api/chat.ts), locate where `convertToModelMessages` is being used
 
 - [ ] Replace `messages: convertToModelMessages(messages)` with `prompt: getDiary(messages)`
 

@@ -8,7 +8,7 @@ First, we need to declare our third custom data part - an `action-end` part that
 
 This will help us track the entire lifecycle of an action from request to completion.
 
-In the `chat.ts` file, we need to complete the type definition for the `action-end` part:
+In the [`api/chat.ts`](./api/chat.ts) file, we need to complete the type definition for the `action-end` part:
 
 ```ts
 export type MyMessage = UIMessage<
@@ -138,7 +138,7 @@ Good luck, and I'll see you in the solution!
 
 ## Steps To Complete
 
-- [ ] Complete the `'action-end'` type definition in `chat.ts` to include the action ID and output information
+- [ ] Complete the `'action-end'` type definition in [`api/chat.ts`](./api/chat.ts) to include the action ID and output information
 
 - [ ] Update the `getDiary` function to handle `data-action-end` parts by returning a string that describes the action output
 

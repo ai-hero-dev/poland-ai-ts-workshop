@@ -205,7 +205,7 @@ Good luck, and I'll see you in the solution!
 
 ## Steps To Complete
 
-- [ ] Declare the `action-decision` data type in the `MyMessage` type with the correct fields (in `chat.ts`)
+- [ ] Declare the `action-decision` data type in the `MyMessage` type with the correct fields (in [`api/chat.ts`](./api/chat.ts))
   - Add an `actionId` field, which references the action that the decision is for
   - Include the `decision` field of type `ActionDecision`
 

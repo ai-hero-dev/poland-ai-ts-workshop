@@ -22,7 +22,7 @@ You'll be introduced to these as part of the onboarding process.
 
 In this exercise, we're going to be taking the Slack message system that we created before and instrumenting it, allowing us to observe what's happening with it in production.
 
-Our first job is to go into the `langfuse.ts` file and do a little bit of admin. Inside the `otelSDK` variable, we're going to be instantiating a `NodeSDK` class from the `@opentelemetry/sdk-node` package. We're then going to pass it the `LangfuseExporter` instance from the `langfuse-vercel` package as the `traceExporter` property.
+Our first job is to go into the [`langfuse.ts`](./api/langfuse.ts) file and do a little bit of admin. Inside the `otelSDK` variable, we're going to be instantiating a `NodeSDK` class from the `@opentelemetry/sdk-node` package. We're then going to pass it the `LangfuseExporter` instance from the `langfuse-vercel` package as the `traceExporter` property.
 
 The `TODO` for `otelSDK` looks like this:
 
@@ -55,7 +55,7 @@ export const langfuse = TODO;
 
 ## Tracing The Code
 
-Once that's done, we can get into the interesting stuff of actually tracing our code. Our first job is inside the `POST` route in `chat.ts`. We're going to declare a trace using the `langfuse.trace` method:
+Once that's done, we can get into the interesting stuff of actually tracing our code. Our first job is inside the `POST` route in [`chat.ts`](./api/chat.ts). We're going to declare a trace using the `langfuse.trace` method:
 
 ```ts
 // Replace this:
@@ -172,11 +172,11 @@ Good luck, and I'll see you in the solution.
   LANGFUSE_BASE_URL=https://cloud.langfuse.com
   ```
 
-- [ ] Implement the `otelSDK` in `langfuse.ts`
+- [ ] Implement the `otelSDK` in [`langfuse.ts`](./api/langfuse.ts)
 
-- [ ] Implement the `langfuse` instance in `langfuse.ts`
+- [ ] Implement the `langfuse` instance in [`langfuse.ts`](./api/langfuse.ts)
 
-- [ ] In `chat.ts`, implement the trace variable:
+- [ ] In [`chat.ts`](./api/chat.ts), implement the trace variable:
 
 - [ ] Add `experimental_telemetry` to the first `streamText` call and the `streamObject` call
 

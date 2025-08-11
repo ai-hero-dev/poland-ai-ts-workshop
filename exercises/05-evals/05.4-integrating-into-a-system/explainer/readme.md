@@ -6,7 +6,7 @@ In other words, you need to extract out the parts of your system that are going 
 
 ## The `POST` Route
 
-Inside here, we have an example `POST` route that sits at `/api/chat`.
+Inside [`api/chat.ts`](./api/chat.ts), we have an example `POST` route that sits at `/api/chat`.
 
 ```ts
 export const POST = async (req: Request): Promise<Response> => {
@@ -21,7 +21,7 @@ export const POST = async (req: Request): Promise<Response> => {
 
 As you can see, we still have this `createUIMessageStreamResponse` here, and all of the logic that extracts the messages out of the body.
 
-But I've created a separate `createChatStream` function that takes in an array of `MyMessage` objects.
+But I've created a separate [`createChatStream`](./api/chat.ts#createChatStream) function that takes in an array of `MyMessage` objects.
 
 If we look at the definition for this function, we can see that it returns a `createUIMessageStream` with `MyMessage`, with all of the logic inside here:
 
@@ -41,7 +41,7 @@ This stream can then be passed down directly into `createUIMessageStreamResponse
 
 ## The Eval
 
-We're inside an example eval here, and we're using `createChatStream` to create a stream of messages:
+We're inside [`evals/example.eval.ts`](./evals/example.eval.ts) here, and we're using `createChatStream` to create a stream of messages:
 
 ```ts
 evalite('Example', {
@@ -106,9 +106,9 @@ Good luck, and I'll see you in the next one.
 
 ## Steps To Complete
 
-- [ ] Review the `api/chat.ts` file to understand how the `createChatStream` function works
+- [ ] Review the [`api/chat.ts`](./api/chat.ts) file to understand how the `createChatStream` function works
 
-- [ ] Examine the eval file structure in `evals/example.eval.ts`
+- [ ] Examine the eval file structure in [`evals/example.eval.ts`](./evals/example.eval.ts)
 
 - [ ] Understand how the input gets converted to messages and passed to `createChatStream`
 

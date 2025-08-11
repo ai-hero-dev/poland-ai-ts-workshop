@@ -60,7 +60,7 @@ We also want the output to be extremely concise too. So we want to check if the 
 
 Your job here is to do a little bit of eval-driven development. You are going to write the scorers here based on the example in the previous exercise.
 
-Then, you're going to update the system prompt above to pass the links in here:
+Then, you're going to update the system prompt in [`evals/example.eval.ts`](./evals/example.eval.ts) to pass the links in here:
 
 ```ts
 prompt: `

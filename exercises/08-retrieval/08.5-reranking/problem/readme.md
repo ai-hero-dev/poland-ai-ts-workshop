@@ -17,7 +17,7 @@ We are going to implement it in this exercise.
 
 ## Slicing the search results
 
-Our first TODOs are just under the `searchTypeScriptDocs` function, inside the `/api/chat.ts` POST route:
+Our first TODOs are just under the `searchTypeScriptDocs` function, inside the [`/api/chat.ts`](./api/chat.ts) POST route:
 
 ```ts
 const searchResults = await searchTypeScriptDocs({

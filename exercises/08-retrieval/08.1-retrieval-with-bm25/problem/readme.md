@@ -44,7 +44,7 @@ export const POST = async (req: Request): Promise<Response> => {
 
 Our first task is implementing a keyword generator. We need to extract relevant search terms from the conversation history. This is where we'll use `streamObject` from the AI SDK.
 
-For search functionality, we'll use the [BM25 algorithm](https://en.wikipedia.org/wiki/Okapi_BM25) (Best Match 25), which ranks documents based on keyword relevance. The system loads TypeScript documentation from the repo's root at `datasets/ts-docs` using the `loadTsDocs` function:
+For search functionality, we'll use the [BM25 algorithm](https://en.wikipedia.org/wiki/Okapi_BM25) (Best Match 25), which ranks documents based on keyword relevance. The system loads TypeScript documentation from the repo's root at `datasets/ts-docs` using the [`loadTsDocs`](./api/bm25.ts) function:
 
 ```ts
 export const loadTsDocs = async () => {
@@ -72,7 +72,7 @@ export const loadTsDocs = async () => {
 
 This function reads all the TypeScript documentation files from the dataset and returns an array of objects containing the filename and content of each document.
 
-The `searchTypeScriptDocs` function then uses these documents for keyword searching:
+The [`searchTypeScriptDocs`](./api/bm25.ts) function then uses these documents for keyword searching:
 
 ```ts
 export const searchTypeScriptDocs = async (

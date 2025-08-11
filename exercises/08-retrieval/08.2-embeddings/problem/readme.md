@@ -21,7 +21,7 @@ The AI SDK provides helpful functions like [`embed`](https://ai-sdk.dev/docs/ref
 
 ## The Problem
 
-In `create-embeddings.ts`, there are three functions we need to implement:
+In [`create-embeddings.ts`](./api/create-embeddings.ts), there are three functions we need to implement:
 
 First, we need to implement `embedLotsOfText`. This function will take a list of documents and return a list of embeddings for each document.
 
@@ -65,7 +65,7 @@ The `searchTypeScriptDocs` function uses these implementations to take a query, 
 
 ## The `/api/chat` Endpoint
 
-Once those are implemented, we need to update the chat route. In `chat.ts`, we need to modify this section:
+Once those are implemented, we need to update the chat route. In [`chat.ts`](./api/chat.ts), we need to modify this section:
 
 ```ts
 export const POST = async (req: Request): Promise<Response> => {
@@ -103,13 +103,13 @@ Good luck with the implementation!
 
 ## Steps To Complete
 
-- [ ] Implement the `embedLotsOfText` function in `create-embeddings.ts` using the `embedMany` function from the AI SDK
+- [ ] Implement the `embedLotsOfText` function in [`create-embeddings.ts`](./api/create-embeddings.ts) using the `embedMany` function from the AI SDK
 
 - [ ] Implement the `embedOnePieceOfText` function using the `embed` function from the AI SDK
 
 - [ ] Implement the `calculateScore` function using the `cosineSimilarity` function from `ai`
 
-- [ ] In `chat.ts`, call the `searchTypeScriptDocs` function with the conversation history
+- [ ] In [`chat.ts`](./api/chat.ts), call the `searchTypeScriptDocs` function with the conversation history
 
 - [ ] Slice the results to get the top 5 (or another number of your choosing) search results
 

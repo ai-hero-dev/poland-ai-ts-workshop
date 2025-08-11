@@ -77,7 +77,7 @@ Good luck, and I will see you in the solution.
 
 ## Steps To Complete
 
-- [ ] Modify the `generateObject` schema in `problem/api/chat.ts` to include a field for the search query
+- [ ] Modify the `generateObject` schema in [`api/chat.ts`](./api/chat.ts) to include a field for the search query
 
 - [ ] Update the system prompt to explain that the search query will be used for semantic search
 

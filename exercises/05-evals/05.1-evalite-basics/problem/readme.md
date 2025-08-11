@@ -8,7 +8,7 @@ Unlike unit tests where you get a pass-fail score, these will give you a score. 
 
 There are plenty of options out there for different tools you can use to run evals like [Braintrust](https://www.braintrust.dev/) or [Langfuse](https://langfuse.com/). We're going to use one called [Evalite](https://evalite.dev), which you can run completely locally and doesn't cost you anything on top of the AI costs.
 
-We're going to go into `example.eval.ts` and we'll see that Evalite is being called here with a title of "Capitals". This is the name of the eval that we're going to run.
+We're going to go into [`example.eval.ts`](./evals/example.eval.ts) and we'll see that Evalite is being called here with a title of "Capitals". This is the name of the eval that we're going to run.
 
 ```ts
 import { evalite } from 'evalite';
