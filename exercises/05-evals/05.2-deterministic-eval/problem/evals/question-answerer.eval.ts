@@ -56,8 +56,9 @@ evalite('Capitals', {
       prompt: `
         You are a helpful assistant that can answer questions about TypeScript releases.
 
-        Question:
+        <question>
         ${input}
+        </question>
       `,
     });
 

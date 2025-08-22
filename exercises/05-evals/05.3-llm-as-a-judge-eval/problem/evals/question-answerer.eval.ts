@@ -27,8 +27,6 @@ evalite('Chain Of Thought Paper', {
       model: google('gemini-2.0-flash'),
       system: `
         You are a helpful assistant that can answer questions about the chain of thought prompting paper.
-        
-        ALWAYS use quotes from the paper when answering the question.
       `,
       messages: [
         {
@@ -36,7 +34,13 @@ evalite('Chain Of Thought Paper', {
           content: [
             {
               type: 'text',
-              text: input,
+              text: `
+              <question>
+              ${input}
+              </question>
+
+              ALWAYS use quotes from the paper when answering the question.
+              `,
             },
             {
               type: 'file',

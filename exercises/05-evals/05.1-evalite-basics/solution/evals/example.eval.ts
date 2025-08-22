@@ -19,14 +19,16 @@ evalite('Capitals', {
   ],
   task: async (input) => {
     const capitalResult = await generateText({
-      model: google('gemini-1.5-flash'),
+      model: google('gemini-2.0-flash-lite'),
       prompt: `
         You are a helpful assistant that can answer questions about the capital of countries.
-        The user will ask you a question about the capital of a country.
-        You should answer the question.
 
-        Question: 
+        <question>
         ${input}
+        </question>
+
+        Answer the question.
+        Reply only with the capital of the country.
       `,
     });
 

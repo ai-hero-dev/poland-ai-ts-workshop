@@ -52,23 +52,30 @@ evalite('Capitals', {
   ],
   task: async (input) => {
     const capitalResult = await generateText({
-      model: google('gemini-1.5-flash'),
+      model: google('gemini-2.0-flash-lite'),
       prompt: `
         You are a helpful assistant that can answer questions about TypeScript releases.
 
-        Answer the question extremely succinctly.
-
-        ALWAYS include relevant links in your answer.
-
-        Format the markdown links inline:
-
-        I really like [this website about cakes](https://www.cakes.com).
-
-        Question:
+        <question>
         ${input}
+        </question>
 
-        Links:
-        ${links.map((link) => `${link.title}: ${link.url}`).join('\n')}
+        <links>
+        ${links.map((link) => `<link>${link.title}: ${link.url}</link>`).join('\n')}
+        </links>
+
+        Answer the question extremely succinctly.
+        ALWAYS include relevant links in your answer.
+        Format markdown links inline:
+          <markdown-link-example>
+          I really like [this website about cakes](https://www.cakes.com).
+          </markdown-link-example>
+          <markdown-link-example>
+          For more information, check out [this piece of reference material](https://www.cakes.com).
+          </markdown-link-example>
+
+        Answer the question, with relevant links.
+        Reply only with the answer.
       `,
     });
 
