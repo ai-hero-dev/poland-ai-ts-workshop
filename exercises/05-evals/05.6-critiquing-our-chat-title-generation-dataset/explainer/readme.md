@@ -47,11 +47,11 @@ To improve our dataset, we should consider adding:
 - Inputs with poor grammar or spelling
 - Inputs without proper capitalization or punctuation
 
-Let's go back to our [Chat Title Generation Playground](/exercises/05-evals/05.05-chat-title-generation/problem/readme.md) and try some of those inputs out.
+Let's go back to our [Chat Title Generation Playground](/exercises/05-evals/05.4-chat-title-generation/problem/readme.md) and try some of those inputs out.
 
 ## Steps To Complete
 
-- [ ] Go back to the [chat title generation exercise](/exercises/05-evals/05.05-chat-title-generation/problem/readme.md) and add some more data to the dataset.
+- [ ] Go back to the [chat title generation exercise](/exercises/05-evals/05.4-chat-title-generation/problem/readme.md) and add some more data to the dataset.
   - Add some malicious inputs to test system boundaries.
   - Add some non-English queries.
   - Add some very long pieces of text.

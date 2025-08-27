@@ -60,7 +60,7 @@ Once we've added them, we might even be able to remove some other parts of the p
   - Use the exemplars from the `exemplars` array
 
 - [ ] Test the implementation by running the exercise
-  - Use `pnpm run exercise 04.3` to run the code
+  - Use `pnpm run exercise` to run the code
   - Check if the output matches the expected format (a concise title for the conversation about induction hobs)
 
 - [ ] Try removing other parts of the prompt

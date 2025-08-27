@@ -166,7 +166,7 @@ The code shown is based on a reference example from the [Vercel AI SDK docs](htt
 
 - [ ] Experiment with the code by modifying the `message` object in [`main.ts`](./main.ts)
   - Add or change parts of different types
-  - Run the code with `pnpm run exercise 03.04` to see how they're represented in the database
+  - Run the code with `pnpm run exercise` to see how they're represented in the database
 
 - [ ] Consider the tradeoffs of this approach versus storing parts as a JSON blob
   - Think about data integrity, query efficiency, and migration complexity

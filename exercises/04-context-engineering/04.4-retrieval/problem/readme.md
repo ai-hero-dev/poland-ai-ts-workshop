@@ -115,6 +115,6 @@ Finally, this code streams the response from the model to the console.
   - Consider using `<output-format>` tags
 
 - [ ] Test your implementation
-  - Run the exercise using `pnpm run exercise 04.4`
+  - Run the exercise using `pnpm run exercise`
   - Try different test cases by changing the `TEST_CASE_TO_TRY` value
   - Verify that the output follows your formatting rules and answers the question accurately

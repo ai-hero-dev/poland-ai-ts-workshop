@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "ai-hero-cli exercise",
     "exercise": "ai-hero-cli exercise",
-    "prepare": "husky",
-    "lint": "tsx internal/lint.ts",
-    "update-cms": "ai-hero-cli internal update-cvm"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +16,9 @@
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
   "dependencies": {
-    "@ai-sdk/anthropic": "^2.0.7",
-    "@ai-sdk/google": "2.0.9",
-    "@ai-sdk/react": "2.0.24",
+    "@ai-sdk/anthropic": "^2.0.8",
+    "@ai-sdk/google": "2.0.11",
+    "@ai-sdk/react": "2.0.26",
     "@clack/prompts": "^0.11.0",
     "@hono/node-server": "^1.19.0",
     "@opentelemetry/auto-instrumentations-node": "^0.62.1",
@@ -34,7 +32,7 @@
     "@types/prompts": "^2.4.9",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "ai": "5.0.24",
+    "ai": "5.0.26",
     "evalite": "^0.11.4",
     "hono": "^4.9.4",
     "langfuse": "^3.38.4",
@@ -53,7 +51,7 @@
     "zod": "^4.0.17"
   },
   "devDependencies": {
-    "ai-hero-cli": "0.0.11",
+    "ai-hero-cli": "0.0.13",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
     "tsx": "^4.20.4"

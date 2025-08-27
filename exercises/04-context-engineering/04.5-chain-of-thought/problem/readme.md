@@ -117,6 +117,6 @@ Good luck, and I will see you in the solution.
   - Specify that after the thinking block should come the answer
   - Make it clear that the answer should NOT be wrapped in an `<answer>` tag
 
-- [ ] Run the exercise using `pnpm run exercise 04.5` to test your implementation
+- [ ] Run the exercise using `pnpm run exercise` to test your implementation
   - Check that the output in the terminal shows dots as the answer generates
   - Verify that the output.md file contains a well-structured explanation

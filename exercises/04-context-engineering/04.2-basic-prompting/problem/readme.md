@@ -51,5 +51,5 @@ We'll have multiple attempts at this over the next few exercises, so don't worry
 - [ ] Add output formatting instructions
   - Ensure the model only returns the title itself with no additional text
 
-- [ ] Test your improved prompt by running the exercise with `pnpm run exercise 04.2`
+- [ ] Test your improved prompt by running the exercise with `pnpm run exercise`
   - Check if the output is now just a single title like "Induction Hobs versus Aga Cookers"

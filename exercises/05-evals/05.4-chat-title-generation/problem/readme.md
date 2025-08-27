@@ -28,7 +28,7 @@ We have a `titles-dataset.csv` which has two columns: an input and a desired out
 | Is there a way to optimize my Tailwind CSS bundle size? | Tailwind CSS optimization    |
 | When is the next Apple iPhone event?                    | Apple iPhone event schedule  |
 
-I manually wrote the first 5-10 entries and then I got an LLM to generate the rest. If you're interested in learning how I did that, check out the [reference material](/exercises/99-reference/99.10-custom-dataset-generation/explainer/readme.md).
+I manually wrote the first 5-10 entries and then I got an LLM to generate the rest.
 
 In the eval, I'm reading the CSV file and parsing it into an array with input and output. Then I'm slicing off only the first five of the dataset and mapping that into a format that Evalite expects:
 

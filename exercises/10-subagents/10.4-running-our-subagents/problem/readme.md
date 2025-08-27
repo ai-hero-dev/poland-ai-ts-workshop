@@ -37,7 +37,7 @@ This string will store a record of all tasks executed and their results, which w
 
 ## The `while` loop
 
-Our main loop is a simple while loop that runs until we've taken 10 steps (to prevent infinite loops). It's very similar to the loop we had in [previous exercises](/exercises/04-agents-and-workflows/04.3-creating-your-own-loop/problem/readme.md).
+Our main loop is a simple while loop that runs until we've taken 10 steps (to prevent infinite loops). It's very similar to the loop we had in [previous exercises](/exercises/06-agents-and-workflows/06.3-creating-your-own-loop/problem/readme.md).
 
 ```ts
 // NOTE: We'll be using this to track the number of steps
