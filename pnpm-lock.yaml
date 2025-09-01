@@ -112,8 +112,8 @@ importers:
         version: 4.0.17
     devDependencies:
       ai-hero-cli:
-        specifier: 0.0.14
-        version: 0.0.14
+        specifier: 0.0.15
+        version: 0.0.15
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -1456,8 +1456,8 @@ packages:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
     engines: {node: '>=8'}
 
-  ai-hero-cli@0.0.14:
-    resolution: {integrity: sha512-zqNAp+/MN8/O/pvVZXgzDonjtOcZ3tfAJvw+3qWbBz1jW6LqfyTWlI8QDi55t3sdugxUl7k0WoNNKuOPea4TfA==}
+  ai-hero-cli@0.0.15:
+    resolution: {integrity: sha512-IQyEoeOpxNFhRsZUDbhBNPFrBWPSvXivHyunAszc3qOKyV/fATcbFe1ehAuGL+cteC42cgyMGlZyQhTSlrf3aw==}
     hasBin: true
 
   ai@5.0.28:
@@ -4980,7 +4980,7 @@ snapshots:
       indent-string: 4.0.0
     optional: true
 
-  ai-hero-cli@0.0.14: {}
+  ai-hero-cli@0.0.15: {}
 
   ai@5.0.28(zod@4.0.17):
     dependencies:
