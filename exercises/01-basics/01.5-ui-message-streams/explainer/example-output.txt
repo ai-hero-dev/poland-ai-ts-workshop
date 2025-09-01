@@ -1,0 +1,41 @@
+{ type: 'start' }
+{ type: 'start-step' }
+{ type: 'text-start', id: '0' }
+{ type: 'text-delta', id: '0', delta: 'A' }
+{ type: 'text-delta', id: '0', delta: ' feline friend,' }
+{
+  type: 'text-delta',
+  id: '0',
+  delta: ' with fur of purest white,\nHe stalks the halls, a prince of silent'
+}
+{
+  type: 'text-delta',
+  id: '0',
+  delta: ' grace,\nOur Steven, king of comfort and of might,\nWith emerald'
+}
+{
+  type: 'text-delta',
+  id: '0',
+  delta: ' eyes that light his furry face.\n' +
+    "He naps upon the sunbeam's golden thread,\n" +
+    'A purring engine, rumbling soft and low,\n'
+}
+{
+  type: 'text-delta',
+  id: '0',
+  delta: 'Then wakes to mischief, planted in his head,\n' +
+    'A playful swat, a sudden, bounding flow.\n' +
+    'He chases shadows, whispers on the breeze,\n'
+}
+{
+  type: 'text-delta',
+  id: '0',
+  delta: 'And climbs the curtains with a joyful leap,\n' +
+    'Demanding treats with elegant decrees,\n' +
+    'A gentle nibble, secrets he will keep.\n' +
+    'So let us cherish Steven, sleek and grand,\n' +
+    'A purring comfort in this mortal land.\n'
+}
+{ type: 'text-end', id: '0' }
+{ type: 'finish-step' }
+{ type: 'finish' }
