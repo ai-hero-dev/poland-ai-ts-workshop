@@ -18,8 +18,8 @@ importers:
         specifier: ^2.0.23
         version: 2.0.23(zod@4.0.17)
       '@ai-sdk/react':
-        specifier: 2.0.28
-        version: 2.0.28(react@19.1.1)(zod@4.0.17)
+        specifier: 2.0.29
+        version: 2.0.29(react@19.1.1)(zod@4.0.17)
       '@clack/prompts':
         specifier: ^0.11.0
         version: 0.11.0
@@ -60,8 +60,8 @@ importers:
         specifier: ^19.1.7
         version: 19.1.7(@types/react@19.1.10)
       ai:
-        specifier: 5.0.28
-        version: 5.0.28(zod@4.0.17)
+        specifier: 5.0.29
+        version: 5.0.29(zod@4.0.17)
       evalite:
         specifier: ^0.11.4
         version: 0.11.4
@@ -73,7 +73,7 @@ importers:
         version: 3.38.4
       langfuse-vercel:
         specifier: ^3.38.4
-        version: 3.38.4(ai@5.0.28(zod@4.0.17))
+        version: 3.38.4(ai@5.0.29(zod@4.0.17))
       lucide-react:
         specifier: ^0.525.0
         version: 0.525.0(react@19.1.1)
@@ -112,8 +112,8 @@ importers:
         version: 4.0.17
     devDependencies:
       ai-hero-cli:
-        specifier: 0.0.15
-        version: 0.0.15
+        specifier: 0.0.16
+        version: 0.0.16
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -160,8 +160,8 @@ packages:
     resolution: {integrity: sha512-6o7Y2SeO9vFKB8lArHXehNuusnpddKPk7xqL7T2/b+OvXMRIXUO1rR4wcv1hAFUAT9avGZshty3Wlua/XA7TvA==}
     engines: {node: '>=18'}
 
-  '@ai-sdk/react@2.0.28':
-    resolution: {integrity: sha512-+1iINCSRvjVgCMfe05Ki1PnV9nMeQvQqCIN45KKV+QhQSItyLsuE+WWQrKt5nDRAF3LFq6cSD0tm5F50SJJh4Q==}
+  '@ai-sdk/react@2.0.29':
+    resolution: {integrity: sha512-RJeI8k//leBrGtgFT0iPGiralLm78J8N6ZY8X0CCsCj2ldEvhQJSPROKR38oLJS3lLwppTK8sxE9LBomggossg==}
     engines: {node: '>=18'}
     peerDependencies:
       react: ^18 || ^19 || ^19.0.0-rc
@@ -1456,12 +1456,12 @@ packages:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
     engines: {node: '>=8'}
 
-  ai-hero-cli@0.0.15:
-    resolution: {integrity: sha512-IQyEoeOpxNFhRsZUDbhBNPFrBWPSvXivHyunAszc3qOKyV/fATcbFe1ehAuGL+cteC42cgyMGlZyQhTSlrf3aw==}
+  ai-hero-cli@0.0.16:
+    resolution: {integrity: sha512-AXoKFUDgCGsVX9sX83ftTv85+H5HvOVM8h4YPgWZX7Vuha+jEFJx+yD2JzQ3/AGxQN3MLQFmpbu+M92PEA3EHQ==}
     hasBin: true
 
-  ai@5.0.28:
-    resolution: {integrity: sha512-tnybAqoDFzuK6O1NOMHX1d/wH7Eug8y0H4l/Gl6swi8BYGtlTPDjniKnGYzgTpLTdpj7SI3qjZuomz7evph9+w==}
+  ai@5.0.29:
+    resolution: {integrity: sha512-jA/d6X5hn3r/PxgZjwzDUMJiEkLBIVVD2gcbpcT/FD4MSLxm5sn6fH1y2VFXVgBEd95mNzQ8ALQubysc6E8Y9g==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4
@@ -3496,10 +3496,10 @@ snapshots:
     dependencies:
       json-schema: 0.4.0
 
-  '@ai-sdk/react@2.0.28(react@19.1.1)(zod@4.0.17)':
+  '@ai-sdk/react@2.0.29(react@19.1.1)(zod@4.0.17)':
     dependencies:
       '@ai-sdk/provider-utils': 3.0.7(zod@4.0.17)
-      ai: 5.0.28(zod@4.0.17)
+      ai: 5.0.29(zod@4.0.17)
       react: 19.1.1
       swr: 2.3.6(react@19.1.1)
       throttleit: 2.1.0
@@ -4980,9 +4980,9 @@ snapshots:
       indent-string: 4.0.0
     optional: true
 
-  ai-hero-cli@0.0.15: {}
+  ai-hero-cli@0.0.16: {}
 
-  ai@5.0.28(zod@4.0.17):
+  ai@5.0.29(zod@4.0.17):
     dependencies:
       '@ai-sdk/gateway': 1.0.15(zod@4.0.17)
       '@ai-sdk/provider': 2.0.0
@@ -5884,9 +5884,9 @@ snapshots:
     dependencies:
       mustache: 4.2.0
 
-  langfuse-vercel@3.38.4(ai@5.0.28(zod@4.0.17)):
+  langfuse-vercel@3.38.4(ai@5.0.29(zod@4.0.17)):
     dependencies:
-      ai: 5.0.28(zod@4.0.17)
+      ai: 5.0.29(zod@4.0.17)
       langfuse: 3.38.4
       langfuse-core: 3.38.4
 
