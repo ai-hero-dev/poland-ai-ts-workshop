@@ -37,7 +37,7 @@
     "ai": "5.0.29",
     "drizzle-orm": "^0.44.5",
     "evalite": "^0.11.4",
-    "hono": "^4.9.4",
+    "hono": "^4.12.25",
     "langfuse": "^3.38.4",
     "langfuse-vercel": "^3.38.4",
     "lucide-react": "^0.525.0",
